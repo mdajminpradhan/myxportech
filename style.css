@@ -16,15 +16,21 @@ html {
   src: url("fonts/Baloo2-Regular.ttf");
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: myfont;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: myfont;
 }
 
 /* get in touch section starts here */
 
 .parallax-window {
-    min-height: 400px;
-    background: transparent;
+  min-height: 400px;
+  background: transparent;
 }
 
 .getInTouch {
@@ -72,21 +78,23 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 
-.container__mail, .container__phone, .container__stayInTouch {
+.container__mail,
+.container__phone,
+.container__stayInTouch {
   text-align: center;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 0px 45px -3px #ddd;
   padding: 30px;
   cursor: pointer;
-  transition: all .5s   ;
+  transition: all 0.5s;
 }
 
-.container__mail:hover , .container__phone:hover , .container__stayInTouch:hover  {
+.container__mail:hover,
+.container__phone:hover,
+.container__stayInTouch:hover {
   transform: scale(1.03);
 }
-
-
 
 .container__mail h2 {
   margin-bottom: 10px;
@@ -97,7 +105,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 18px 0;
 }
 
-.container__phone .phone__number img, .container__stayInTouch .stayInTouch__profile img {
+.container__phone .phone__number img,
+.container__stayInTouch .stayInTouch__profile img {
   margin-right: 10px;
   object-fit: contain;
 }
@@ -124,8 +133,8 @@ h1, h2, h3, h4, h5, h6, p {
 /* wrapper location details starts here */
 
 .containerDetails__location {
-    margin: 50px 0;
-    margin-top: 50px;
+  margin: 50px 0;
+  margin-top: 50px;
 }
 
 .containerDetails__location .location__container {
@@ -145,27 +154,27 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 10px;
 }
 
-
 /* wrapper location details ends here */
 
 /* partners section starts here */
 
 .partners {
-    background: rgba(221, 221, 221, 0.198);
-    padding: 30px 0;
+  background: rgba(221, 221, 221, 0.198);
+  padding: 30px 0;
 }
 
 .partners__container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .partners__container img {
-    box-shadow: 0px 0px 45px -3px #ddd;
-    cursor: pointer;
+  box-shadow: 0px 0px 45px -3px #ddd;
+  cursor: pointer;
+  margin: 10px 0;
 }
 
 /* partners section ends here */
@@ -203,7 +212,7 @@ h1, h2, h3, h4, h5, h6, p {
 .footerTop {
   background: rgba(0, 0, 0, 0.931);
   padding: 50px;
-  margin-top: -5    px;
+  margin-top: -5 px;
 }
 
 .footerTop__container {
@@ -278,30 +287,30 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .subscribeForm {
-    display: flex;
-    margin-top: 40px !important;
+  display: flex;
+  margin-top: 40px !important;
 }
 
-.subscribeForm input{
-    border: none;
-    outline: none;
-    padding: 8px 10px;
-    border-radius: 20px 0 0 20px;
-    font-size: 1rem;
+.subscribeForm input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  border-radius: 20px 0 0 20px;
+  font-size: 1rem;
 }
 
 .subscribeForm button {
-    border: none;
-    outline: none;
-    padding: 10px 15px;
-    border-radius: 0 15px 15px 0;
-    background: lime;
-    cursor: pointer;
-    font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 0 15px 15px 0;
+  background: lime;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .subscribeForm button:hover {
-    background: rgb(42, 255, 42)
+  background: rgb(42, 255, 42);
 }
 
 /* footer top ends from here */
@@ -350,7 +359,7 @@ footer {
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .footer__container div .social:hover {
@@ -381,5 +390,31 @@ footer {
 
   .footer__container div {
     margin-top: 20px;
+  }
+}
+
+/* for screen size 530 */
+@media only screen and (max-width: 530px) {
+
+  .partners__container {
+    justify-content: center;
+  }
+
+  .subscribeForm {
+    flex-wrap: wrap;
+  }
+
+  .subscribeForm input {
+    border-radius: 30px !important;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .subscribeForm button {
+    border-radius: 30px;
+  }
+
+  .footer__container > p {
+    text-align: center;
   }
 }
